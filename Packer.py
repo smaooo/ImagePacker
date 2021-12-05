@@ -3,7 +3,7 @@ import os
 import sys
 
 
-source = "D:\King Assessment\Tiles\\"
+source = "D:\King Assessment\ImagePacker\Tiles\\"
 dir = os.listdir(source)
 images = []
 sizes = []
@@ -21,7 +21,7 @@ if len(sizes) > 1:
 else:
     size = sizes[0] 
 
-result = Image.new('RGBA', (size[0], size[1] * len(images)), (250, 250, 250))
+result = Image.new('RGBA', (size[0], size[1] * len(images)))
 
 for img in images:
     reImg = img.resize(size, Image.BILINEAR)
