@@ -49,7 +49,7 @@ def commandLine(argv) -> Tuple[str]:
     # Handle no options error
     except getopt.GetoptError as err:
         # Remind the usage
-        print('usage: syslearn.py -o <output name>')
+        print('usage: {} -o <output name>'.format(__file__))
         # Print the error
         print(err)
         # Terminate the program
@@ -64,7 +64,7 @@ def commandLine(argv) -> Tuple[str]:
             print('usage:')
             print()
             print(__file__ + ' -o <output name>')
-            print('Will collect all of the images in the same folder as the *.py file and save the result with <output name>.')
+            print('Will collect all of the images in the same folder as the "{}" file and save the result with <output name>.'.format(__file__))
             print()
             print('...')
             print('Options and arguments:')
