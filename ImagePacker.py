@@ -1,8 +1,6 @@
 import os
-from posixpath import split
 import sys
 import getopt
-from argparse import ArgumentParser 
 from typing import Tuple, List
 from PIL import Image, UnidentifiedImageError
 from PIL.Image import Image as ImgType
@@ -68,7 +66,7 @@ def commandLine(argv) -> Tuple[str]:
             print()
             print('...')
             print('Options and arguments:')
-            print('''-i arg             : {} will only use images inside the given source folder (e.g. D:/Foo/)''')
+            print('''-i arg             : will only use images inside the given source folder (e.g. -i D:/Foo/)''')
             print('''-l arg             : List of Images paths (e.g. -l [D:/Foo/img1.png,D:/Foo/img2.png,...])''')
             print('''-i arg -l arg      : Use only the given list of images in the given source folder
                      (e.g. -i D:/Foo/ -l [img1.png,img2.png,...]''')
