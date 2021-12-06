@@ -2,7 +2,7 @@
 ImagePacker is a command line program written in Python for creating vertical image array of the given images.
 
 ## Usage
-(py/py3/python/python3) ImagePacker.py -o <output name>
+(py/py3/python/python3) ImagePacker.py -o "<output name>"
 
 Will collect all of the images in the same folder as the " file and save the result with <output name>.
 
