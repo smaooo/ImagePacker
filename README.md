@@ -15,9 +15,9 @@ Will collect all of the images in the same folder as the " file and save the res
 -i arg -l arg      : Use only the given list of images in the given source folder (e.g. -i D:/Foo/ -l [img1.png,img2.png,...]
   
 -d arg             : Destination folder where you want to save the result
-  
                      -d <destination path>: will save the result in the given path
                      -d same: will save the result in the same folder as the source folder
+  
 -o arg             : Name of the result image file
   
 -p arg             : Padding around the picture in pixel (e.g. -p 0). By default it is 10 pixel.
